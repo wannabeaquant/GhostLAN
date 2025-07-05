@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "ghostlan-simworld-collection",
+		"name": "GhostLAN SimWorld - Duality AI",
+		"description": "Advanced eSports Anti-Cheat Testing Platform with Duality AI Integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Core Endpoints",
+			"item": [
+				{
+					"name": "Platform Overview",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								""
+							]
+						},
+						"description": "Get platform overview with Duality AI status"
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"health"
+							]
+						},
+						"description": "Check system health and Duality AI status"
+					},
+					"response": []
+				},
+				{
+					"name": "API Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"status"
+							]
+						},
+						"description": "Get detailed API status and Duality AI integration info"
+					},
+					"response": []
+				}
+			],
+			"description": "Core platform endpoints"
+		},
+		{
+			"name": "Tournament Management",
+			"item": [
+				{
+					"name": "Get Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/tournament",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"tournament"
+							]
+						},
+						"description": "Get all tournaments"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Tournament",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test Tournament\",\n  \"description\": \"Test tournament for demo\",\n  \"start_date\": \"2024-01-15T10:00:00Z\",\n  \"end_date\": \"2024-01-15T18:00:00Z\",\n  \"max_players\": 16,\n  \"game_type\": \"FPS\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/tournament/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"tournament",
+								"create"
+							]
+						},
+						"description": "Create a new tournament"
+					},
+					"response": []
+				}
+			],
+			"description": "Tournament management endpoints"
+		},
+		{
+			"name": "Analytics",
+			"item": [
+				{
+					"name": "Get Analytics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/analytics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"analytics"
+							]
+						},
+						"description": "Get analytics data"
+					},
+					"response": []
+				},
+				{
+					"name": "Export Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/export",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"export"
+							]
+						},
+						"description": "Export data in various formats"
+					},
+					"response": []
+				}
+			],
+			"description": "Analytics and data export endpoints"
+		},
+		{
+			"name": "Mobile API",
+			"item": [
+				{
+					"name": "Mobile Auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"testpass\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/mobile/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"mobile",
+								"auth"
+							]
+						},
+						"description": "Mobile app authentication"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mobile Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/mobile/tournaments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"mobile",
+								"tournaments"
+							]
+						},
+						"description": "Get tournaments for mobile app"
+					},
+					"response": []
+				}
+			],
+			"description": "Mobile app API endpoints"
+		},
+		{
+			"name": "Cloud Integration",
+			"item": [
+				{
+					"name": "Cloud Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/cloud/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"cloud",
+								"status"
+							]
+						},
+						"description": "Check cloud integration status"
+					},
+					"response": []
+				}
+			],
+			"description": "Cloud integration endpoints"
+		},
+		{
+			"name": "Streaming",
+			"item": [
+				{
+					"name": "Streaming Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/streaming/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"streaming",
+								"status"
+							]
+						},
+						"description": "Check streaming system status"
+					},
+					"response": []
+				}
+			],
+			"description": "Real-time streaming endpoints"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+} 

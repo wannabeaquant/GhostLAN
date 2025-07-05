@@ -1,0 +1,60 @@
+{
+  "python_version": "3.13.2",
+  "dependencies": {
+    "FastAPI": "\u2705 Available",
+    "Uvicorn": "\u2705 Available",
+    "Pydantic": "\u2705 Available",
+    "WebSockets": "\u2705 Available",
+    "NumPy": "\u2705 Available",
+    "Pandas": "\u2705 Available",
+    "Plotly": "\u2705 Available",
+    "Dash": "\u274c Missing",
+    "TensorFlow": "\u274c Missing",
+    "Scikit-learn": "\u2705 Available",
+    "PyTorch": "\u2705 Available",
+    "OpenCV": "\u274c Missing",
+    "Pillow": "\u2705 Available",
+    "Librosa": "\u274c Missing",
+    "SoundFile": "\u274c Missing",
+    "Boto3": "\u2705 Available",
+    "Azure SDK": "\u274c Missing",
+    "Google Cloud": "\u2705 Available",
+    "aiohttp": "\u2705 Available",
+    "aiortc": "\u274c Missing",
+    "PyJWT": "\u2705 Available",
+    "QR Code": "\u274c Missing",
+    "SQLAlchemy": "\u2705 Available",
+    "Redis": "\u2705 Available",
+    "Cryptography": "\u2705 Available",
+    "Passlib": "\u2705 Available",
+    "Prometheus": "\u2705 Available",
+    "Structlog": "\u274c Missing"
+  },
+  "core_modules": {
+    "Duality Simulation": "\u2705 Available",
+    "Anti-Cheat Engine": "\u274c Missing: cannot import name 'GhostLANAntiCheat' from 'ghostlan_core.anticheat' (C:\\CS\\Hackathons\\GhostLan\\MVP\\ghostlan_core\\anticheat.py)",
+    "Analytics Pipeline": "\u2705 Available",
+    "Match Recorder": "\u2705 Available",
+    "API Server": "\u274c Missing: cannot import name 'create_api_server' from 'api.server' (C:\\CS\\Hackathons\\GhostLan\\MVP\\api\\server.py)",
+    "Config API": "\u2705 Available",
+    "Export API": "\u2705 Available",
+    "Replay API": "\u2705 Available",
+    "Tournament API": "\u2705 Available"
+  },
+  "advanced_modules": {
+    "ML Pipeline": "\u274c Missing: No module named 'tensorflow'",
+    "Streaming System": "\u274c Missing: No module named 'cv2'",
+    "Mobile Backend": "\u274c Missing: No module named 'qrcode'",
+    "Cloud Integration": "\u274c Missing: No module named 'azure'",
+    "Advanced Tournaments": "\u2705 Available"
+  },
+  "api_endpoints": {},
+  "integration_tests": {
+    "basic_functionality": "\u274c Failed: cannot import name 'GhostLANAntiCheat' from 'ghostlan_core.anticheat' (C:\\CS\\Hackathons\\GhostLan\\MVP\\ghostlan_core\\anticheat.py)",
+    "ml_pipeline": "\u274c Failed: No module named 'tensorflow'",
+    "streaming_system": "\u274c Failed: No module named 'cv2'",
+    "mobile_backend": "\u274c Failed: No module named 'qrcode'",
+    "cloud_integration": "\u274c Failed: No module named 'azure'",
+    "tournament_system": "\u2705 Working"
+  }
+}
