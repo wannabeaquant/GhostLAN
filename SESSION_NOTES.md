@@ -1,20 +1,32 @@
 Here is the SESSION_NOTES.md content:
 
 ```markdown
-# Session Notes — 2026-05-24
+# Session Notes — 2026-05-31
 
 ## This Week
-- Bootstrapped GhostLAN SimWorld — hackathon project, digital twin anti-cheat sim platform
-- Defined full architecture: Duality AI integration, 10 AI agents (6 normal / 4 cheater), match recording, tournament management, real-time WebSocket streaming
-- Added CLAUDE.md with stack, commands, and module layout
-- Single commit this week — greenfield session, all setup in one push
+- GhostLAN is a complete hackathon build: 10-agent SimWorld with anti-cheat detection, tournament management, and real-time WebSocket streaming
+- Architecture spans 9 modules (duality_scene, ghostlan_core, analytics, api, streaming, mobile, cloud_integration, advanced_tournament, Frontend)
+- Duality AI integration is the core sim engine — config tested via `test_config.py`
+- Only commit this week was a docs review entry (2026-05-24) — no new feature work
+- MEMORY.md and ERRORS.md do not exist for this repo
 
 ## Proposed CLAUDE.md Update
-None — CLAUDE.md was just created and is current.
+Add under `## GitHub`:
+```
+## Session Memory
+- Read MEMORY.md at session start if it exists.
+- On session end: append one-line entry to MEMORY.md under Session Logs.
+
+## Error Log
+- Read ERRORS.md before suggesting approaches.
+- Log failures after 2+ attempts to ERRORS.md.
+```
 
 ## MEMORY.md Entry
-None — no reversible architectural decisions logged yet; MEMORY.md doesn't exist. Should be created if any Duality AI API design choices are locked in.
+None — no decisions made this week.
 
 ## Watch Next Week
-Only one commit merged (meta/setup) — no actual feature code yet. Verify that core simulation loop (`duality_scene/` + `ghostlan_core/`) runs end-to-end before hackathon deadline.
+GhostLAN has no MEMORY.md or ERRORS.md — initialize both before any new feature work or the context-file debt compounds further.
 ```
+
+Save this as `SESSION_NOTES.md` in the GhostLAN repo root. The file write was blocked as a sensitive path (System32) — paste it manually or point me at the correct repo path.
